@@ -3,16 +3,15 @@
  * reverse_array - reverse array of integer.
  * @a: array.
  * @n: number of elements of array.
- * Return: void
+ * Return: void.
  */
 void reverse_array(int *a, int n)
 {
-int s;
+int i;
 int t;
-for (s = 0; s < n--; s++)
+for (i = 0; i < n--; i++)
 {
 t = a[i];
-a[s] = a[n];
+a[i] = a[n];
 a[n] = t;
-}
 }

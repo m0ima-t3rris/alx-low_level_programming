@@ -1,23 +1,21 @@
 #include "main.h"
 /**
- * leet - encode into 1337.
- * @n: input value.
- * Return: n value.
+ * _strcmp - compare strings values.
+ * @s1: input value.
+ * @s2: input value.
+ * Return: s1[i] - s2[i]
  */
-char *leet(char *n)
+int _strcmp(char *s1, char *s2)
 {
-int t, r;
-char s1[] = "aAeEoOtTlL";
-char s2[] = "4433007711";
-for (r = 0; n[r] != '\0'; r++)
+int i;
+i = 0;
+while (s1[i] != '\0' && s2[i] != '\0')
 {
-for (s = 0; s < 10; s++)
+if (s1[i] != s2[i])
 {
-if (n[t] == s1[r])
-{
-n[t] = s2[r];
+return (s1[i] - s2[i]);
 }
+i++;
 }
-}
-return (n);
+return (0);
 }
